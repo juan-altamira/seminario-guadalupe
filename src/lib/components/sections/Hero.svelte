@@ -12,7 +12,7 @@
 
 <section class="relative overflow-hidden bg-slate-900 text-white">
   <div class="absolute inset-0 opacity-20" aria-hidden="true">
-    <div class="h-full w-full bg-gradient-to-br from-brand-600/80 to-slate-900" />
+    <div class="h-full w-full bg-gradient-to-br from-brand-600/80 to-slate-900"></div>
   </div>
   <div class="relative mx-auto flex max-w-6xl flex-col gap-8 px-4 py-24 md:flex-row md:items-center">
     <div class="md:w-2/3">

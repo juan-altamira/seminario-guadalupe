@@ -1,7 +1,7 @@
 import type { PageLoad } from './$types';
 import { eventos } from '$content/data/eventos';
 
-export const prerender = true;
+export const prerender = false;
 
 const PAGE_SIZE = 6;
 

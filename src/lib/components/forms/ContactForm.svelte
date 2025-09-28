@@ -13,6 +13,13 @@
   let sending = false;
   let status: 'idle' | 'ok' | 'error' = 'idle';
 
+  const inputIds = {
+    name: 'contacto-nombre',
+    email: 'contacto-email',
+    message: 'contacto-mensaje',
+    consent: 'contacto-consentimiento'
+  } as const;
+
   async function submit(e: SubmitEvent) {
     e.preventDefault();
     if (honeypot) return;
@@ -41,9 +48,10 @@
     <label>Dejar en blanco<input bind:value={honeypot} autocomplete="off" /></label>
   </div>
   <div>
-    <label class="text-sm font-medium text-slate-700">Nombre completo</label>
+    <label class="text-sm font-medium text-slate-700" for={inputIds.name}>Nombre completo</label>
     <input
       class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 shadow-sm focus:border-brand-500 focus:ring-brand-500"
+      id={inputIds.name}
       name="name"
       required
       bind:value={name}
@@ -51,9 +59,10 @@
     />
   </div>
   <div>
-    <label class="text-sm font-medium text-slate-700">Email</label>
+    <label class="text-sm font-medium text-slate-700" for={inputIds.email}>Email</label>
     <input
       class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 shadow-sm focus:border-brand-500 focus:ring-brand-500"
+      id={inputIds.email}
       name="email"
       type="email"
       required
@@ -62,9 +71,10 @@
     />
   </div>
   <div>
-    <label class="text-sm font-medium text-slate-700">Mensaje</label>
+    <label class="text-sm font-medium text-slate-700" for={inputIds.message}>Mensaje</label>
     <textarea
       class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 shadow-sm focus:border-brand-500 focus:ring-brand-500"
+      id={inputIds.message}
       name="message"
       rows="5"
       required
@@ -72,7 +82,13 @@
     ></textarea>
   </div>
   <label class="flex items-start gap-3 text-sm text-slate-600">
-    <input type="checkbox" required bind:checked={consent} class="mt-1 rounded border-slate-300 text-brand-600" />
+    <input
+      id={inputIds.consent}
+      type="checkbox"
+      required
+      bind:checked={consent}
+      class="mt-1 rounded border-slate-300 text-brand-600"
+    />
     <span>Acepto el tratamiento de mis datos para recibir respuesta del Seminario.</span>
   </label>
   <button

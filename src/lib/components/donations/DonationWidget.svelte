@@ -20,8 +20,8 @@
 </script>
 
 <div class="space-y-6">
-  <div>
-    <label class="text-sm font-medium text-slate-700">Seleccioná un monto</label>
+  <div role="group" aria-labelledby="donation-amount-label">
+    <p id="donation-amount-label" class="text-sm font-medium text-slate-700">Seleccioná un monto</p>
     <div class="mt-3 flex flex-wrap gap-3">
       {#each config.montosSugeridos as sugerido}
         <button
@@ -33,20 +33,22 @@
         </button>
       {/each}
     </div>
+    </div>
     <div class="mt-3">
-      <label class="text-xs text-slate-500">Monto personalizado</label>
+      <label class="text-xs text-slate-500" for="donation-custom">Monto personalizado</label>
       <input
         type="number"
         min="1"
         step="1"
         bind:value={amount}
+        id="donation-custom"
         class="mt-1 w-40 rounded-lg border border-slate-300 px-3 py-2 focus:border-brand-500 focus:ring-brand-500"
       />
     </div>
   </div>
 
-  <div>
-    <label class="text-sm font-medium text-slate-700">Método de donación</label>
+  <div role="group" aria-labelledby="donation-method-label">
+    <p id="donation-method-label" class="text-sm font-medium text-slate-700">Método de donación</p>
     <div class="mt-3 grid gap-3 md:grid-cols-3">
       {#each config.metodos as item}
         <button

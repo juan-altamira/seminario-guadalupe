@@ -47,7 +47,12 @@
           {link.label}
         </a>
       {/each}
-      <div class="relative" on:mouseenter={() => (legalesOpen = true)} on:mouseleave={() => (legalesOpen = false)}>
+      <div
+        class="relative"
+        role="presentation"
+        on:mouseenter={() => (legalesOpen = true)}
+        on:mouseleave={() => (legalesOpen = false)}
+      >
         <button
           class={`nav-link flex items-center gap-2 ${legalesOpen ? 'is-active' : ''}`}
           aria-haspopup="true"

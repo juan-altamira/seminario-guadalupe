@@ -3,7 +3,7 @@ import { recursos } from '$content/data/recursos';
 
 const PAGE_SIZE = 9;
 
-export const prerender = true;
+export const prerender = false;
 
 export const load: PageLoad = async ({ url }) => {
   const tipo = url.searchParams.get('tipo') as 'pdf' | 'articulo' | null;
