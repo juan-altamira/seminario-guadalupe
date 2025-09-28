@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply min-h-screen antialiased;
+}
+
+a {
+  @apply text-brand-700 hover:text-brand-800 underline-offset-4;
+}
+
+button {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2;
+}
+
+
+.reveal {
+  opacity: 0;
+  --slide-x: 0px;
+  --slide-y: 150px;
+  transform: translate3d(var(--slide-x), var(--slide-y), 0);
+  will-change: opacity, transform;
+}
+
+.reveal[data-reveal-direction='left'] {
+  --slide-x: -180px;
+  --slide-y: 0px;
+}
+
+.reveal[data-reveal-direction='right'] {
+  --slide-x: 180px;
+  --slide-y: 0px;
+}
+
+.reveal[data-reveal-direction='down'] {
+  --slide-x: 0px;
+  --slide-y: -150px;
+}
+
+.reveal.is-revealed {
+  animation: slide-in 1.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translate3d(var(--slide-x), var(--slide-y), 0);
+  }
+  70% {
+    opacity: 1;
+    transform: translate3d(calc(var(--slide-x) * -0.08), calc(var(--slide-y) * -0.08), 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.35rem 0;
+  color: theme('colors.slate.700');
+  transition: color 0.25s ease;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  inset-inline: 0;
+  bottom: -0.4rem;
+  height: 3px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, theme('colors.brand.500'), theme('colors.brand.300'));
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: theme('colors.brand.700');
+}
+
+.nav-link:hover::after,
+.nav-link:focus-visible::after,
+.nav-link.is-active::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.nav-link.is-active {
+  color: theme('colors.brand.700');
+}

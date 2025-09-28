@@ -1,0 +1,1042 @@
+{
+  "colaboradores-laicos": {
+    "width": 832,
+    "height": 1248,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/colaboradores-laicos.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/colaboradores-laicos.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/colaboradores-laicos.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/colaboradores-laicos.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/colaboradores-laicos.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/colaboradores-laicos.jpg"
+      },
+      {
+        "width": 832,
+        "format": "avif",
+        "file": "images/832w/colaboradores-laicos.avif"
+      },
+      {
+        "width": 832,
+        "format": "webp",
+        "file": "images/832w/colaboradores-laicos.webp"
+      },
+      {
+        "width": 832,
+        "format": "jpg",
+        "file": "images/832w/colaboradores-laicos.jpg"
+      }
+    ]
+  },
+  "comunidad-de-seminaristas": {
+    "width": 832,
+    "height": 1248,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/comunidad-de-seminaristas.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/comunidad-de-seminaristas.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/comunidad-de-seminaristas.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/comunidad-de-seminaristas.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/comunidad-de-seminaristas.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/comunidad-de-seminaristas.jpg"
+      },
+      {
+        "width": 832,
+        "format": "avif",
+        "file": "images/832w/comunidad-de-seminaristas.avif"
+      },
+      {
+        "width": 832,
+        "format": "webp",
+        "file": "images/832w/comunidad-de-seminaristas.webp"
+      },
+      {
+        "width": 832,
+        "format": "jpg",
+        "file": "images/832w/comunidad-de-seminaristas.jpg"
+      }
+    ]
+  },
+  "descarga-1": {
+    "width": 832,
+    "height": 1248,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/descarga-1.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/descarga-1.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/descarga-1.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/descarga-1.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/descarga-1.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/descarga-1.jpg"
+      },
+      {
+        "width": 832,
+        "format": "avif",
+        "file": "images/832w/descarga-1.avif"
+      },
+      {
+        "width": 832,
+        "format": "webp",
+        "file": "images/832w/descarga-1.webp"
+      },
+      {
+        "width": 832,
+        "format": "jpg",
+        "file": "images/832w/descarga-1.jpg"
+      }
+    ]
+  },
+  "descarga-2": {
+    "width": 832,
+    "height": 1248,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/descarga-2.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/descarga-2.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/descarga-2.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/descarga-2.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/descarga-2.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/descarga-2.jpg"
+      },
+      {
+        "width": 832,
+        "format": "avif",
+        "file": "images/832w/descarga-2.avif"
+      },
+      {
+        "width": 832,
+        "format": "webp",
+        "file": "images/832w/descarga-2.webp"
+      },
+      {
+        "width": 832,
+        "format": "jpg",
+        "file": "images/832w/descarga-2.jpg"
+      }
+    ]
+  },
+  "descarga-3": {
+    "width": 832,
+    "height": 1248,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/descarga-3.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/descarga-3.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/descarga-3.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/descarga-3.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/descarga-3.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/descarga-3.jpg"
+      },
+      {
+        "width": 832,
+        "format": "avif",
+        "file": "images/832w/descarga-3.avif"
+      },
+      {
+        "width": 832,
+        "format": "webp",
+        "file": "images/832w/descarga-3.webp"
+      },
+      {
+        "width": 832,
+        "format": "jpg",
+        "file": "images/832w/descarga-3.jpg"
+      }
+    ]
+  },
+  "descarga-4": {
+    "width": 832,
+    "height": 1248,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/descarga-4.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/descarga-4.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/descarga-4.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/descarga-4.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/descarga-4.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/descarga-4.jpg"
+      },
+      {
+        "width": 832,
+        "format": "avif",
+        "file": "images/832w/descarga-4.avif"
+      },
+      {
+        "width": 832,
+        "format": "webp",
+        "file": "images/832w/descarga-4.webp"
+      },
+      {
+        "width": 832,
+        "format": "jpg",
+        "file": "images/832w/descarga-4.jpg"
+      }
+    ]
+  },
+  "descarga-5": {
+    "width": 832,
+    "height": 1248,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/descarga-5.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/descarga-5.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/descarga-5.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/descarga-5.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/descarga-5.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/descarga-5.jpg"
+      },
+      {
+        "width": 832,
+        "format": "avif",
+        "file": "images/832w/descarga-5.avif"
+      },
+      {
+        "width": 832,
+        "format": "webp",
+        "file": "images/832w/descarga-5.webp"
+      },
+      {
+        "width": 832,
+        "format": "jpg",
+        "file": "images/832w/descarga-5.jpg"
+      }
+    ]
+  },
+  "descarga-6": {
+    "width": 832,
+    "height": 1248,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/descarga-6.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/descarga-6.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/descarga-6.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/descarga-6.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/descarga-6.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/descarga-6.jpg"
+      },
+      {
+        "width": 832,
+        "format": "avif",
+        "file": "images/832w/descarga-6.avif"
+      },
+      {
+        "width": 832,
+        "format": "webp",
+        "file": "images/832w/descarga-6.webp"
+      },
+      {
+        "width": 832,
+        "format": "jpg",
+        "file": "images/832w/descarga-6.jpg"
+      }
+    ]
+  },
+  "descarga": {
+    "width": 832,
+    "height": 1248,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/descarga.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/descarga.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/descarga.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/descarga.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/descarga.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/descarga.jpg"
+      },
+      {
+        "width": 832,
+        "format": "avif",
+        "file": "images/832w/descarga.avif"
+      },
+      {
+        "width": 832,
+        "format": "webp",
+        "file": "images/832w/descarga.webp"
+      },
+      {
+        "width": 832,
+        "format": "jpg",
+        "file": "images/832w/descarga.jpg"
+      }
+    ]
+  },
+  "discernimiento-vocacional": {
+    "width": 832,
+    "height": 1248,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/discernimiento-vocacional.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/discernimiento-vocacional.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/discernimiento-vocacional.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/discernimiento-vocacional.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/discernimiento-vocacional.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/discernimiento-vocacional.jpg"
+      },
+      {
+        "width": 832,
+        "format": "avif",
+        "file": "images/832w/discernimiento-vocacional.avif"
+      },
+      {
+        "width": 832,
+        "format": "webp",
+        "file": "images/832w/discernimiento-vocacional.webp"
+      },
+      {
+        "width": 832,
+        "format": "jpg",
+        "file": "images/832w/discernimiento-vocacional.jpg"
+      }
+    ]
+  },
+  "formacion-sacerdotal": {
+    "width": 832,
+    "height": 1248,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/formacion-sacerdotal.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/formacion-sacerdotal.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/formacion-sacerdotal.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/formacion-sacerdotal.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/formacion-sacerdotal.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/formacion-sacerdotal.jpg"
+      },
+      {
+        "width": 832,
+        "format": "avif",
+        "file": "images/832w/formacion-sacerdotal.avif"
+      },
+      {
+        "width": 832,
+        "format": "webp",
+        "file": "images/832w/formacion-sacerdotal.webp"
+      },
+      {
+        "width": 832,
+        "format": "jpg",
+        "file": "images/832w/formacion-sacerdotal.jpg"
+      }
+    ]
+  },
+  "guia-de-oracion": {
+    "width": 832,
+    "height": 1248,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/guia-de-oracion.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/guia-de-oracion.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/guia-de-oracion.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/guia-de-oracion.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/guia-de-oracion.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/guia-de-oracion.jpg"
+      },
+      {
+        "width": 832,
+        "format": "avif",
+        "file": "images/832w/guia-de-oracion.avif"
+      },
+      {
+        "width": 832,
+        "format": "webp",
+        "file": "images/832w/guia-de-oracion.webp"
+      },
+      {
+        "width": 832,
+        "format": "jpg",
+        "file": "images/832w/guia-de-oracion.jpg"
+      }
+    ]
+  },
+  "guia-oracion-vocaciones": {
+    "width": 832,
+    "height": 1248,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/guia-oracion-vocaciones.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/guia-oracion-vocaciones.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/guia-oracion-vocaciones.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/guia-oracion-vocaciones.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/guia-oracion-vocaciones.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/guia-oracion-vocaciones.jpg"
+      },
+      {
+        "width": 832,
+        "format": "avif",
+        "file": "images/832w/guia-oracion-vocaciones.avif"
+      },
+      {
+        "width": 832,
+        "format": "webp",
+        "file": "images/832w/guia-oracion-vocaciones.webp"
+      },
+      {
+        "width": 832,
+        "format": "jpg",
+        "file": "images/832w/guia-oracion-vocaciones.jpg"
+      }
+    ]
+  },
+  "historia-del-seminario": {
+    "width": 832,
+    "height": 1248,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/historia-del-seminario.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/historia-del-seminario.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/historia-del-seminario.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/historia-del-seminario.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/historia-del-seminario.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/historia-del-seminario.jpg"
+      },
+      {
+        "width": 832,
+        "format": "avif",
+        "file": "images/832w/historia-del-seminario.avif"
+      },
+      {
+        "width": 832,
+        "format": "webp",
+        "file": "images/832w/historia-del-seminario.webp"
+      },
+      {
+        "width": 832,
+        "format": "jpg",
+        "file": "images/832w/historia-del-seminario.jpg"
+      }
+    ]
+  },
+  "historia-seminario-guadalupe": {
+    "width": 832,
+    "height": 1248,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/historia-seminario-guadalupe.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/historia-seminario-guadalupe.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/historia-seminario-guadalupe.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/historia-seminario-guadalupe.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/historia-seminario-guadalupe.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/historia-seminario-guadalupe.jpg"
+      },
+      {
+        "width": 832,
+        "format": "avif",
+        "file": "images/832w/historia-seminario-guadalupe.avif"
+      },
+      {
+        "width": 832,
+        "format": "webp",
+        "file": "images/832w/historia-seminario-guadalupe.webp"
+      },
+      {
+        "width": 832,
+        "format": "jpg",
+        "file": "images/832w/historia-seminario-guadalupe.jpg"
+      }
+    ]
+  },
+  "insercion-pastoral": {
+    "width": 832,
+    "height": 1248,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/insercion-pastoral.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/insercion-pastoral.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/insercion-pastoral.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/insercion-pastoral.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/insercion-pastoral.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/insercion-pastoral.jpg"
+      },
+      {
+        "width": 832,
+        "format": "avif",
+        "file": "images/832w/insercion-pastoral.avif"
+      },
+      {
+        "width": 832,
+        "format": "webp",
+        "file": "images/832w/insercion-pastoral.webp"
+      },
+      {
+        "width": 832,
+        "format": "jpg",
+        "file": "images/832w/insercion-pastoral.jpg"
+      }
+    ]
+  },
+  "itinerario-discernimiento": {
+    "width": 832,
+    "height": 1248,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/itinerario-discernimiento.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/itinerario-discernimiento.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/itinerario-discernimiento.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/itinerario-discernimiento.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/itinerario-discernimiento.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/itinerario-discernimiento.jpg"
+      },
+      {
+        "width": 832,
+        "format": "avif",
+        "file": "images/832w/itinerario-discernimiento.avif"
+      },
+      {
+        "width": 832,
+        "format": "webp",
+        "file": "images/832w/itinerario-discernimiento.webp"
+      },
+      {
+        "width": 832,
+        "format": "jpg",
+        "file": "images/832w/itinerario-discernimiento.jpg"
+      }
+    ]
+  },
+  "itinerario-sacerdotal": {
+    "width": 832,
+    "height": 1248,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/itinerario-sacerdotal.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/itinerario-sacerdotal.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/itinerario-sacerdotal.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/itinerario-sacerdotal.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/itinerario-sacerdotal.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/itinerario-sacerdotal.jpg"
+      },
+      {
+        "width": 832,
+        "format": "avif",
+        "file": "images/832w/itinerario-sacerdotal.avif"
+      },
+      {
+        "width": 832,
+        "format": "webp",
+        "file": "images/832w/itinerario-sacerdotal.webp"
+      },
+      {
+        "width": 832,
+        "format": "jpg",
+        "file": "images/832w/itinerario-sacerdotal.jpg"
+      }
+    ]
+  },
+  "obra-para-las-vocaciones-eclesiasticas": {
+    "width": 832,
+    "height": 1248,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/obra-para-las-vocaciones-eclesiasticas.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/obra-para-las-vocaciones-eclesiasticas.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/obra-para-las-vocaciones-eclesiasticas.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/obra-para-las-vocaciones-eclesiasticas.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/obra-para-las-vocaciones-eclesiasticas.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/obra-para-las-vocaciones-eclesiasticas.jpg"
+      },
+      {
+        "width": 832,
+        "format": "avif",
+        "file": "images/832w/obra-para-las-vocaciones-eclesiasticas.avif"
+      },
+      {
+        "width": 832,
+        "format": "webp",
+        "file": "images/832w/obra-para-las-vocaciones-eclesiasticas.webp"
+      },
+      {
+        "width": 832,
+        "format": "jpg",
+        "file": "images/832w/obra-para-las-vocaciones-eclesiasticas.jpg"
+      }
+    ]
+  },
+  "seminaristas-formadores": {
+    "width": 832,
+    "height": 1248,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/seminaristas-formadores.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/seminaristas-formadores.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/seminaristas-formadores.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/seminaristas-formadores.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/seminaristas-formadores.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/seminaristas-formadores.jpg"
+      },
+      {
+        "width": 832,
+        "format": "avif",
+        "file": "images/832w/seminaristas-formadores.avif"
+      },
+      {
+        "width": 832,
+        "format": "webp",
+        "file": "images/832w/seminaristas-formadores.webp"
+      },
+      {
+        "width": 832,
+        "format": "jpg",
+        "file": "images/832w/seminaristas-formadores.jpg"
+      }
+    ]
+  }
+}
