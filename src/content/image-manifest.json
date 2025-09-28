@@ -1,4 +1,56 @@
 {
+  "imagen-evento-basilica-de-guadalupe": {
+    "width": 1024,
+    "height": 680,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/imagen-evento-basilica-de-guadalupe.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/imagen-evento-basilica-de-guadalupe.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/imagen-evento-basilica-de-guadalupe.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/imagen-evento-basilica-de-guadalupe.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/imagen-evento-basilica-de-guadalupe.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/imagen-evento-basilica-de-guadalupe.jpg"
+      },
+      {
+        "width": 1024,
+        "format": "avif",
+        "file": "images/1024w/imagen-evento-basilica-de-guadalupe.avif"
+      },
+      {
+        "width": 1024,
+        "format": "webp",
+        "file": "images/1024w/imagen-evento-basilica-de-guadalupe.webp"
+      },
+      {
+        "width": 1024,
+        "format": "jpg",
+        "file": "images/1024w/imagen-evento-basilica-de-guadalupe.jpg"
+      }
+    ]
+  },
   "colaboradores-laicos": {
     "width": 832,
     "height": 1248,
@@ -519,6 +571,58 @@
       }
     ]
   },
+  "encuentro-interseminario-2024": {
+    "width": 839,
+    "height": 586,
+    "format": "png",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/encuentro-interseminario-2024.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/encuentro-interseminario-2024.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/encuentro-interseminario-2024.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/encuentro-interseminario-2024.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/encuentro-interseminario-2024.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/encuentro-interseminario-2024.jpg"
+      },
+      {
+        "width": 839,
+        "format": "avif",
+        "file": "images/839w/encuentro-interseminario-2024.avif"
+      },
+      {
+        "width": 839,
+        "format": "webp",
+        "file": "images/839w/encuentro-interseminario-2024.webp"
+      },
+      {
+        "width": 839,
+        "format": "jpg",
+        "file": "images/839w/encuentro-interseminario-2024.jpg"
+      }
+    ]
+  },
   "formacion-sacerdotal": {
     "width": 832,
     "height": 1248,
@@ -779,6 +883,58 @@
       }
     ]
   },
+  "imagen-evento-corpus-christi": {
+    "width": 2048,
+    "height": 1536,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/imagen-evento-corpus-christi.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/imagen-evento-corpus-christi.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/imagen-evento-corpus-christi.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/imagen-evento-corpus-christi.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/imagen-evento-corpus-christi.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/imagen-evento-corpus-christi.jpg"
+      },
+      {
+        "width": 1200,
+        "format": "avif",
+        "file": "images/1200w/imagen-evento-corpus-christi.avif"
+      },
+      {
+        "width": 1200,
+        "format": "webp",
+        "file": "images/1200w/imagen-evento-corpus-christi.webp"
+      },
+      {
+        "width": 1200,
+        "format": "jpg",
+        "file": "images/1200w/imagen-evento-corpus-christi.jpg"
+      }
+    ]
+  },
   "insercion-pastoral": {
     "width": 832,
     "height": 1248,
@@ -984,6 +1140,58 @@
         "width": 832,
         "format": "jpg",
         "file": "images/832w/obra-para-las-vocaciones-eclesiasticas.jpg"
+      }
+    ]
+  },
+  "seminario-buen-pastor": {
+    "width": 1080,
+    "height": 720,
+    "format": "jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "format": "avif",
+        "file": "images/480w/seminario-buen-pastor.avif"
+      },
+      {
+        "width": 480,
+        "format": "webp",
+        "file": "images/480w/seminario-buen-pastor.webp"
+      },
+      {
+        "width": 480,
+        "format": "jpg",
+        "file": "images/480w/seminario-buen-pastor.jpg"
+      },
+      {
+        "width": 768,
+        "format": "avif",
+        "file": "images/768w/seminario-buen-pastor.avif"
+      },
+      {
+        "width": 768,
+        "format": "webp",
+        "file": "images/768w/seminario-buen-pastor.webp"
+      },
+      {
+        "width": 768,
+        "format": "jpg",
+        "file": "images/768w/seminario-buen-pastor.jpg"
+      },
+      {
+        "width": 1080,
+        "format": "avif",
+        "file": "images/1080w/seminario-buen-pastor.avif"
+      },
+      {
+        "width": 1080,
+        "format": "webp",
+        "file": "images/1080w/seminario-buen-pastor.webp"
+      },
+      {
+        "width": 1080,
+        "format": "jpg",
+        "file": "images/1080w/seminario-buen-pastor.jpg"
       }
     ]
   },

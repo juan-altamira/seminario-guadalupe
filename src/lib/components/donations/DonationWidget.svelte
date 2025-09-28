@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { DonacionConfig, DonacionMetodo } from '$content/models';
   import { createEventDispatcher } from 'svelte';
+  import SlideInPicture from '$components/media/SlideInPicture.svelte';
 
   export let config: DonacionConfig;
   export let status: 'idle' | 'ok' | 'cancel' | 'error' = 'idle';
@@ -20,6 +21,15 @@
 </script>
 
 <div class="space-y-6">
+  <SlideInPicture
+    name="seminario-buen-pastor"
+    alt="Seminario Buen Pastor"
+    wrapperClass="overflow-hidden rounded-2xl"
+    pictureClass="block h-full w-full"
+    imgClass="h-full w-full object-cover"
+    sizes="(max-width: 768px) 100vw, 480px"
+  />
+
   <div role="group" aria-labelledby="donation-amount-label">
     <p id="donation-amount-label" class="text-sm font-medium text-slate-700">Seleccioná un monto</p>
     <div class="mt-3 flex flex-wrap gap-3">
