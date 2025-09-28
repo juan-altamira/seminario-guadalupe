@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { Hero } from '$content/models';
   import SlideInPicture from '$components/media/SlideInPicture.svelte';
-  import { type PictureName } from '$components/media/ResponsivePicture.svelte';
+  import { type PictureName } from '$lib/media/manifest';
   import manifest from '$content/image-manifest.json';
 
   export let hero: Hero;
@@ -35,7 +35,7 @@
         <SlideInPicture
           name={managedImage}
           fallbackSrc={externalImage}
-          alt={hero.titulo}
+          alt={hero.imagenAlt ?? hero.titulo}
           wrapperClass="overflow-hidden rounded-3xl border border-white/20 shadow-xl"
           pictureClass="block h-full w-full"
           imgClass="h-full w-full object-cover"

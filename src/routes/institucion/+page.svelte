@@ -1,6 +1,7 @@
 <script lang="ts">
   import Hero from '$components/sections/Hero.svelte';
   import type { PageContent } from '$content/models';
+  import { PortableText } from '@portabletext/svelte';
 
   export let data: { page?: PageContent };
 
@@ -17,8 +18,12 @@
 {/if}
 
 <section class="mx-auto max-w-4xl px-4 py-16">
-  {#if data.page?.cuerpo}
-    <div class="prose prose-slate max-w-none" bind:this={undefined}>
+  {#if data.page?.cuerpoPortable?.length}
+    <div class="prose prose-slate max-w-none">
+      <PortableText value={data.page.cuerpoPortable} />
+    </div>
+  {:else if data.page?.cuerpo}
+    <div class="prose prose-slate max-w-none">
       {@html data.page.cuerpo}
     </div>
   {:else}

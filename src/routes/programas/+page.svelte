@@ -3,7 +3,7 @@
   import SectionHeader from '$components/sections/SectionHeader.svelte';
   import type { Programa, PageContent } from '$content/models';
   import SlideInPicture from '$components/media/SlideInPicture.svelte';
-  import { type PictureName } from '$components/media/ResponsivePicture.svelte';
+  import { type PictureName } from '$lib/media/manifest';
   import manifest from '$content/image-manifest.json';
 
   export let data: { programas: Programa[]; page?: PageContent };
@@ -34,7 +34,7 @@
         <a href={`/programas/${programa.slug}`} class="block focus:outline-none focus-visible:ring focus-visible:ring-brand-500">
           <SlideInPicture
             name={picture}
-            alt={`Programa ${programa.titulo}`}
+            alt={programa.imagenAlt ?? `Programa ${programa.titulo}`}
             wrapperClass="w-full overflow-hidden rounded-t-3xl"
             pictureClass="block h-full w-full"
             imgClass="h-full w-full object-cover"

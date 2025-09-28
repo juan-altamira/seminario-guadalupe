@@ -1,3 +1,5 @@
+import type { PortableTextBlock } from '@portabletext/types';
+
 export type SiteSettings = {
   nombre: string;
   eslogan?: string;
@@ -17,6 +19,7 @@ export type Hero = {
   subtitulo?: string;
   cta?: { label: string; href: string };
   imagen?: string;
+  imagenAlt?: string;
 };
 
 export type PageContent = {
@@ -24,6 +27,7 @@ export type PageContent = {
   titulo: string;
   hero?: Hero;
   cuerpo?: string;
+  cuerpoPortable?: PortableTextBlock[];
   galeria?: { src: string; alt: string }[];
 };
 
@@ -32,7 +36,9 @@ export type Persona = {
   nombre: string;
   rol: string;
   bio: string;
+  bioPortable?: PortableTextBlock[];
   foto?: string;
+  fotoAlt?: string;
 };
 
 export type Programa = {
@@ -40,7 +46,9 @@ export type Programa = {
   titulo: string;
   resumen: string;
   cuerpo?: string;
+  cuerpoPortable?: PortableTextBlock[];
   imagen?: string;
+  imagenAlt?: string;
 };
 
 export type EventoEstado = 'proximo' | 'pasado';
@@ -51,7 +59,9 @@ export type Evento = {
   fechaInicio: string;
   fechaFin?: string;
   imagen?: string;
+  imagenAlt?: string;
   descripcion?: string;
+  cuerpoPortable?: PortableTextBlock[];
   lugar?: {
     nombre: string;
     direccion?: string;
@@ -68,8 +78,10 @@ export type Recurso = {
   tipo: RecursoTipo;
   fechaPublicacion: string;
   portada?: string;
+  portadaAlt?: string;
   archivoPdf?: string;
   contenido?: string;
+  contenidoPortable?: PortableTextBlock[];
   resumen?: string;
 };
 

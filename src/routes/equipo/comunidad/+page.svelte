@@ -1,6 +1,6 @@
 <script lang="ts">
   import SlideInPicture from '$components/media/SlideInPicture.svelte';
-  import { type PictureName } from '$components/media/ResponsivePicture.svelte';
+  import { type PictureName } from '$lib/media/manifest';
   import manifest from '$content/image-manifest.json';
 
   const seminaristaSlugs = ['descarga-1', 'descarga-2', 'descarga-3', 'descarga-4', 'descarga-5', 'descarga-6', 'descarga']

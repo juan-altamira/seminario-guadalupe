@@ -1,10 +1,10 @@
 import type { RequestHandler } from '@sveltejs/kit';
-import { getSiteContent } from '$content/site';
+import { fetchEvents, fetchResources } from '$lib/sanity/content.server';
 
 const baseUrl = 'https://seminarioguadalupe.org';
 
-export const GET: RequestHandler = () => {
-  const { eventos, recursos } = getSiteContent();
+export const GET: RequestHandler = async () => {
+  const [eventos, recursos] = await Promise.all([fetchEvents(), fetchResources()]);
 
   const staticRoutes = [
     '/',

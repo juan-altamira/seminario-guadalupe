@@ -1,5 +1,6 @@
 <script lang="ts">
-  import ResponsivePicture, { type PictureName } from '$components/media/ResponsivePicture.svelte';
+  import ResponsivePicture from '$components/media/ResponsivePicture.svelte';
+  import { type PictureName } from '$lib/media/manifest';
   import { reveal, type RevealDirection } from '$lib/actions/reveal';
   import manifest from '$content/image-manifest.json';
 

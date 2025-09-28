@@ -1,8 +1,9 @@
 <script lang="ts">
   import SlideInPicture from '$components/media/SlideInPicture.svelte';
   import type { Programa } from '$content/models';
-  import { type PictureName } from '$components/media/ResponsivePicture.svelte';
+  import { type PictureName } from '$lib/media/manifest';
   import manifest from '$content/image-manifest.json';
+  import { PortableText } from '@portabletext/svelte';
 
   export let data: { programa?: Programa; relacionados: Programa[] };
   const programa = data.programa;
@@ -58,7 +59,7 @@
         <SlideInPicture
           name={getPicture(programa.imagen)}
           fallbackSrc={!getPicture(programa.imagen) ? programa.imagen ?? null : null}
-          alt={programa.titulo}
+          alt={programa.imagenAlt ?? programa.titulo}
           wrapperClass="w-full overflow-hidden rounded-3xl shadow-lg"
           pictureClass="block h-full w-full"
           imgClass="h-full w-full object-cover"
@@ -69,7 +70,9 @@
     </header>
 
     <article class="prose prose-slate max-w-none">
-      {#if programa.cuerpo}
+      {#if programa.cuerpoPortable?.length}
+        <PortableText value={programa.cuerpoPortable} />
+      {:else if programa.cuerpo}
         {#each programa.cuerpo.split('\n\n') as parrafo}
           <p>{parrafo}</p>
         {/each}

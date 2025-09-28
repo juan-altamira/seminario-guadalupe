@@ -1,9 +1,5 @@
 <script lang="ts">
-  import manifest from '$content/image-manifest.json';
-
-  type Manifest = typeof manifest;
-
-  export type PictureName = keyof Manifest;
+  import manifest, { type PictureName } from '$lib/media/manifest';
 
   export let name: PictureName;
   export let alt: string;
@@ -15,11 +11,13 @@
   const entry = manifest[name];
 
   if (!entry) {
-    console.warn(`Imagen \"${name}\" no existe en image-manifest.json. Ejecutá pnpm optimize:images`);
+    console.warn(`Imagen "${name}" no existe en image-manifest.json. Ejecutá pnpm optimize:images`);
   }
 
+  type VariantMap = Record<string, { width: number; file: string }[]>;
+
   const sources = entry
-    ? entry.variants.reduce<Record<string, { width: number; file: string }[]>>((acc, variant) => {
+    ? entry.variants.reduce<VariantMap>((acc, variant) => {
         acc[variant.format] ??= [];
         acc[variant.format].push({ width: variant.width, file: variant.file });
         return acc;

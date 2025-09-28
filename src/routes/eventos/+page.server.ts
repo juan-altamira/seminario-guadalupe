@@ -1,11 +1,12 @@
-import type { PageLoad } from './$types';
-import { eventos } from '$content/data/eventos';
+import type { PageServerLoad } from './$types';
+import { fetchEvents } from '$lib/sanity/content.server';
 
 export const prerender = false;
 
 const PAGE_SIZE = 6;
 
-export const load: PageLoad = async ({ url }) => {
+export const load: PageServerLoad = async ({ url }) => {
+  const eventos = await fetchEvents();
   const page = Number(url.searchParams.get('page') ?? '1');
 
   const proximos = eventos

@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { Recurso } from '$content/models';
   import SlideInPicture from '$components/media/SlideInPicture.svelte';
+  import { type PictureName } from '$lib/media/manifest';
   import type { RevealDirection } from '$lib/actions/reveal';
   import manifest from '$content/image-manifest.json';
 
@@ -14,7 +15,7 @@
   <a href={`/recursos/${recurso.slug}`} class="block h-full focus:outline-none focus-visible:ring focus-visible:ring-brand-500">
     <SlideInPicture
       name={managedCover}
-      alt={`Portada ${recurso.titulo}`}
+      alt={recurso.portadaAlt ?? `Portada ${recurso.titulo}`}
       wrapperClass="w-full overflow-hidden rounded-t-2xl"
       pictureClass="block h-full w-full"
       imgClass="h-full w-full object-cover"

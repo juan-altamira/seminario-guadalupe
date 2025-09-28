@@ -1,11 +1,12 @@
-import type { PageLoad } from './$types';
-import { recursos } from '$content/data/recursos';
+import type { PageServerLoad } from './$types';
+import { fetchResources } from '$lib/sanity/content.server';
 
 const PAGE_SIZE = 9;
 
 export const prerender = false;
 
-export const load: PageLoad = async ({ url }) => {
+export const load: PageServerLoad = async ({ url }) => {
+  const recursos = await fetchResources();
   const tipo = url.searchParams.get('tipo') as 'pdf' | 'articulo' | null;
   const page = Number(url.searchParams.get('page') ?? '1');
 

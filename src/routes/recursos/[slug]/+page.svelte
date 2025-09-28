@@ -1,16 +1,18 @@
 <script lang="ts">
   import type { Recurso } from '$content/models';
   import SlideInPicture from '$components/media/SlideInPicture.svelte';
-  import { type PictureName } from '$components/media/ResponsivePicture.svelte';
+  import { type PictureName } from '$lib/media/manifest';
   import manifest from '$content/image-manifest.json';
+  import { PortableText } from '@portabletext/svelte';
 
   export let data: { recurso?: Recurso };
   const recurso = data.recurso;
 
   const managedCover = recurso?.portada && recurso.portada in manifest ? (recurso.portada as PictureName) : null;
   const imageEntry = managedCover ? manifest[managedCover] : null;
-  const ogVariant = imageEntry?.variants.find((v) => v.format === 'jpg') ?? imageEntry?.variants.at(-1);
+  const ogVariant = imageEntry?.variants.find((v: { format: string }) => v.format === 'jpg') ?? imageEntry?.variants.at(-1);
   const ogImage = ogVariant ? `https://seminarioguadalupe.org/${ogVariant.file}` : recurso?.portada;
+  const hasPortableContent = recurso?.contenidoPortable && recurso.contenidoPortable.length > 0;
 
   function trackDownload(event: MouseEvent) {
     const anchor = event.currentTarget as HTMLAnchorElement;
@@ -79,7 +81,7 @@
     </header>
     <SlideInPicture
       name={managedCover}
-      alt={`Portada ${recurso.titulo}`}
+      alt={recurso.portadaAlt ?? `Portada ${recurso.titulo}`}
       wrapperClass="w-full overflow-hidden rounded-3xl border"
       pictureClass="block h-full w-full"
       imgClass="h-full w-full object-cover"
@@ -90,7 +92,11 @@
     {#if recurso.resumen}
       <p class="text-base text-slate-700">{recurso.resumen}</p>
     {/if}
-    {#if recurso.contenido}
+    {#if hasPortableContent}
+      <div class="prose prose-lg prose-slate max-w-none prose-headings:text-slate-900 prose-h2:mt-10 prose-h3:mt-6 prose-a:text-brand-700 hover:prose-a:text-brand-800 prose-strong:text-brand-800 prose-li:marker:text-brand-500">
+        <PortableText value={recurso.contenidoPortable ?? []} />
+      </div>
+    {:else if recurso.contenido}
       <div class="prose prose-lg prose-slate max-w-none prose-headings:text-slate-900 prose-h2:mt-10 prose-h3:mt-6 prose-a:text-brand-700 hover:prose-a:text-brand-800 prose-strong:text-brand-800 prose-li:marker:text-brand-500">
         {@html recurso.contenido}
       </div>

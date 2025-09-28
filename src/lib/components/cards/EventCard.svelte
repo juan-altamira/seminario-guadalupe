@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { Evento } from '$content/models';
   import SlideInPicture from '$components/media/SlideInPicture.svelte';
+  import { type PictureName } from '$lib/media/manifest';
   import type { RevealDirection } from '$lib/actions/reveal';
   import manifest from '$content/image-manifest.json';
 
@@ -13,7 +14,7 @@
 <article class="flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
   <SlideInPicture
     name={managedImage}
-    alt={`Imagen evento ${evento.titulo}`}
+    alt={evento.imagenAlt ?? `Imagen evento ${evento.titulo}`}
     wrapperClass="h-40 w-full overflow-hidden"
     pictureClass="block h-full w-full"
     imgClass="h-full w-full object-cover"

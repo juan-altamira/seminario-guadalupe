@@ -2,8 +2,9 @@
   import Hero from '$components/sections/Hero.svelte';
   import type { Persona, PageContent } from '$content/models';
   import SlideInPicture from '$components/media/SlideInPicture.svelte';
-  import { type PictureName } from '$components/media/ResponsivePicture.svelte';
+  import { type PictureName } from '$lib/media/manifest';
   import manifest from '$content/image-manifest.json';
+  import { PortableText } from '@portabletext/svelte';
 
   export let data: { personas: Persona[]; page?: PageContent };
 
@@ -29,7 +30,7 @@
           <a href="/equipo/comunidad" class="block focus:outline-none focus-visible:ring focus-visible:ring-brand-500">
             <SlideInPicture
               name={picture}
-              alt={`Foto de ${persona.nombre}`}
+              alt={persona.fotoAlt ?? `Foto de ${persona.nombre}`}
               wrapperClass="mb-4 h-40 w-full overflow-hidden rounded-xl"
               pictureClass="block h-full w-full"
               imgClass="h-full w-full object-cover"
@@ -40,13 +41,19 @@
             />
             <h3 class="text-lg font-semibold text-slate-900">{persona.nombre}</h3>
             <p class="text-xs uppercase tracking-wide text-brand-600">{persona.rol}</p>
-            <p class="mt-3 text-sm text-slate-600">{persona.bio}</p>
+            <div class="mt-3 text-sm text-slate-600">
+              {#if persona.bioPortable?.length}
+                <PortableText value={persona.bioPortable} />
+              {:else if persona.bio}
+                <p>{persona.bio}</p>
+              {/if}
+            </div>
           </a>
         {:else}
           <div>
             <SlideInPicture
               name={picture}
-              alt={`Foto de ${persona.nombre}`}
+              alt={persona.fotoAlt ?? `Foto de ${persona.nombre}`}
               wrapperClass="mb-4 h-40 w-full overflow-hidden rounded-xl"
               pictureClass="block h-full w-full"
               imgClass="h-full w-full object-cover"
@@ -57,7 +64,13 @@
             />
             <h3 class="text-lg font-semibold text-slate-900">{persona.nombre}</h3>
             <p class="text-xs uppercase tracking-wide text-brand-600">{persona.rol}</p>
-            <p class="mt-3 text-sm text-slate-600">{persona.bio}</p>
+            <div class="mt-3 text-sm text-slate-600">
+              {#if persona.bioPortable?.length}
+                <PortableText value={persona.bioPortable} />
+              {:else if persona.bio}
+                <p>{persona.bio}</p>
+              {/if}
+            </div>
           </div>
         {/if}
       </article>

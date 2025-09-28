@@ -1,16 +1,18 @@
 <script lang="ts">
   import type { Evento } from '$content/models';
   import SlideInPicture from '$components/media/SlideInPicture.svelte';
-  import { type PictureName } from '$components/media/ResponsivePicture.svelte';
+  import { type PictureName } from '$lib/media/manifest';
   import manifest from '$content/image-manifest.json';
+  import { PortableText } from '@portabletext/svelte';
 
   export let data: { evento?: Evento };
   const evento = data.evento;
 
   const managedImage = evento?.imagen && evento.imagen in manifest ? (evento.imagen as PictureName) : null;
   const imageEntry = managedImage ? manifest[managedImage] : null;
-  const ogVariant = imageEntry?.variants.find((v) => v.format === 'jpg') ?? imageEntry?.variants.at(-1);
+  const ogVariant = imageEntry?.variants.find((v: { format: string }) => v.format === 'jpg') ?? imageEntry?.variants.at(-1);
   const ogImage = ogVariant ? `https://seminarioguadalupe.org/${ogVariant.file}` : evento?.imagen;
+  const hasPortableContent = evento?.cuerpoPortable && evento.cuerpoPortable.length > 0;
 </script>
 
 <svelte:head>
@@ -79,7 +81,7 @@
     </header>
     <SlideInPicture
       name={managedImage}
-      alt={`Imagen del evento ${evento.titulo}`}
+      alt={evento.imagenAlt ?? `Imagen del evento ${evento.titulo}`}
       wrapperClass="w-full overflow-hidden rounded-3xl border"
       pictureClass="block h-full w-full"
       imgClass="h-full w-full object-cover"
@@ -87,7 +89,11 @@
       direction="up"
       fallbackSrc={managedImage ? null : evento?.imagen ?? null}
     />
-    {#if evento.descripcion}
+    {#if hasPortableContent}
+      <div class="prose prose-slate max-w-none">
+        <PortableText value={evento.cuerpoPortable ?? []} />
+      </div>
+    {:else if evento.descripcion}
       <div class="prose prose-slate max-w-none">
         <p>{evento.descripcion}</p>
       </div>
