@@ -33,7 +33,6 @@
         </button>
       {/each}
     </div>
-    </div>
     <div class="mt-3">
       <label class="text-xs text-slate-500" for="donation-custom">Monto personalizado</label>
       <input
@@ -56,11 +55,11 @@
           class={`rounded-2xl border p-4 text-left text-sm transition ${method === item.tipo ? 'border-brand-600 bg-brand-50' : 'border-slate-200 hover:border-brand-300'}`}
           on:click={() => setMethod(item.tipo)}
         >
-          <div class="font-semibold text-slate-900">{item.descripcion}</div>
+          <span class="font-semibold text-slate-900 block">{item.descripcion}</span>
           {#if item.tipo === 'online'}
-            <p class="mt-1 text-xs text-slate-600">Pago seguro con pasarela externa.</p>
+            <span class="mt-1 text-xs text-slate-600 block">Pago seguro con pasarela externa.</span>
           {:else}
-            <p class="mt-1 text-xs text-slate-600">Verás los datos para completar la transferencia.</p>
+            <span class="mt-1 text-xs text-slate-600 block">Verás los datos para completar la transferencia.</span>
           {/if}
         </button>
       {/each}
