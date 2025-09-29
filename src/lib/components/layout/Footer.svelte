@@ -33,10 +33,10 @@
       </div>
     </div>
   </div>
-  <div class="bg-slate-100 py-6">
-    <div class="mx-auto max-w-6xl px-4 text-center">
-      <span class="text-sm font-semibold text-slate-900 tracking-tight">Seminario "Nuestra Señora de Guadalupe"</span>
-      <span class="block mx-auto mt-2 h-0.5 w-24 rounded bg-gradient-to-r from-brand-600 to-brand-400" aria-hidden="true"></span>
+  <div style="background:#000000;padding:20px 0;text-align:center;">
+    <div style="font-family: Arial, Helvetica, sans-serif; font-size:20px;">
+      <span style="background:linear-gradient(90deg,#33ff99,#00ffcc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-style:normal;">Seminario</span>
+      <span style="background:linear-gradient(90deg,#33ff99,#00ffcc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-style:italic;margin-left:8px;">"Nuestra Señora de Guadalupe"</span>
     </div>
   </div>
 </footer>
