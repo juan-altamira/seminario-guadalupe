@@ -34,6 +34,6 @@
     </div>
   </div>
   <div class="bg-slate-100 py-4 text-center text-xs text-slate-500">
-    © {new Date().getFullYear()} {site.nombre}. Todos los derechos reservados.
+    
   </div>
 </footer>
