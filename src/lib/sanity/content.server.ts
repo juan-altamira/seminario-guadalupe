@@ -34,13 +34,15 @@ import {
   mapPerson,
   mapProgram,
   mapResource,
+  mapArticle,
   mapSiteSettings,
   type DonationDocument,
   type EventDocument,
   type PageDocument,
   type PersonDocument,
   type ProgramDocument,
-  type ResourceDocument
+  type ResourceDocument,
+  type ArticleDocument
 } from './transformers';
 import type { PortableTextBlock } from '@portabletext/types';
 
@@ -133,12 +135,20 @@ export async function fetchPageBySlug(slug: string): Promise<PageContent | undef
 }
 
 export async function fetchResources(): Promise<Recurso[]> {
-  const docs = await safeFetch<ResourceDocument[]>(resourcesQuery);
-  if (!docs || docs.length === 0) {
+  const [resourceDocs, articleDocs] = await Promise.all([
+    safeFetch<ResourceDocument[]>(resourcesQuery),
+    safeFetch<ArticleDocument[]>(articlesQuery)
+  ]);
+
+  const mappedResources = resourceDocs?.map((doc) => mapResource(doc)) ?? [];
+  const mappedArticles = articleDocs?.map((doc) => mapArticle(doc)) ?? [];
+  const combined = [...mappedResources, ...mappedArticles];
+
+  if (combined.length === 0) {
     return staticResources;
   }
-  const mapped = docs.map((doc) => mapResource(doc));
-  return mergeWithFallback(mapped, staticResources);
+
+  return mergeWithFallback(combined, staticResources);
 }
 
 export async function fetchResourceBySlug(slug: string): Promise<Recurso | undefined> {

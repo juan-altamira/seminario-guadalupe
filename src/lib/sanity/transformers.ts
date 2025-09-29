@@ -70,6 +70,15 @@ export type ResourceDocument = {
   fechaPublicacion: string;
 };
 
+export type ArticleDocument = {
+  slug: string;
+  titulo: string;
+  resumen?: string;
+  contenido?: PortableTextBlock[];
+  portada?: SanityImage;
+  fechaPublicacion: string;
+};
+
 export type DonationDocument = {
   titulo?: string;
   montosSugeridos?: number[];
@@ -216,6 +225,19 @@ export function mapResource(doc: ResourceDocument): Recurso {
     resumen: doc.resumen,
     contenidoPortable: safeBlocks(doc.contenido),
     archivoPdf: doc.archivoPdf ?? undefined,
+    fechaPublicacion: doc.fechaPublicacion,
+    portada: imageToString(doc.portada),
+    portadaAlt: doc.portada?.alt
+  };
+}
+
+export function mapArticle(doc: ArticleDocument): Recurso {
+  return {
+    slug: doc.slug,
+    titulo: doc.titulo,
+    tipo: 'articulo',
+    resumen: doc.resumen,
+    contenidoPortable: safeBlocks(doc.contenido),
     fechaPublicacion: doc.fechaPublicacion,
     portada: imageToString(doc.portada),
     portadaAlt: doc.portada?.alt
