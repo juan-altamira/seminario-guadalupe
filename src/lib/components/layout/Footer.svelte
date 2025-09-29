@@ -20,14 +20,6 @@
     </div>
     <div class="flex gap-10 text-sm">
       <div>
-        <div class="font-medium text-slate-700">Legales</div>
-        <ul class="mt-3 space-y-2">
-          <li><a href="/legales/privacidad">Privacidad</a></li>
-          <li><a href="/legales/cookies">Cookies</a></li>
-          <li><a href="/legales/aviso">Aviso legal</a></li>
-        </ul>
-      </div>
-      <div>
         <div class="font-medium text-slate-700">Redes</div>
         <ul class="mt-3 space-y-2">
           {#if site.redes?.length}

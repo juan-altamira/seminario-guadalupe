@@ -7,7 +7,6 @@
 
   const currentPath = derived(page, ($page) => $page.url.pathname);
   let mobileOpen = false;
-  let legalesOpen = false;
 
   const mainLinks = [
     { href: '/institucion', label: 'Institución' },
@@ -16,13 +15,6 @@
     { href: '/eventos', label: 'Eventos' },
     { href: '/recursos', label: 'Recursos' }
   ];
-
-  const legalesLinks = [
-    { href: '/legales/privacidad', label: 'Privacidad' },
-    { href: '/legales/cookies', label: 'Cookies' },
-    { href: '/legales/aviso', label: 'Aviso legal' }
-  ];
-
   function toggleMobile() {
     mobileOpen = !mobileOpen;
   }
@@ -47,39 +39,6 @@
           {link.label}
         </a>
       {/each}
-      <div
-        class="relative"
-        role="presentation"
-        on:mouseenter={() => (legalesOpen = true)}
-        on:mouseleave={() => (legalesOpen = false)}
-      >
-        <button
-          class={`nav-link flex items-center gap-2 ${legalesOpen ? 'is-active' : ''}`}
-          aria-haspopup="true"
-          aria-expanded={legalesOpen}
-          on:click={() => (legalesOpen = !legalesOpen)}
-        >
-          Legales
-          <span aria-hidden="true">▾</span>
-        </button>
-        {#if legalesOpen}
-          <div class="absolute right-0 mt-2 w-40 rounded-md border bg-white shadow-lg">
-            <ul class="py-2 text-sm">
-              {#each legalesLinks as legal}
-                <li>
-                  <a
-                    class="block px-4 py-2 hover:bg-slate-100"
-                    href={legal.href}
-                    aria-current={$currentPath === legal.href ? 'page' : undefined}
-                  >
-                    {legal.label}
-                  </a>
-                </li>
-              {/each}
-            </ul>
-          </div>
-        {/if}
-      </div>
       <a class="rounded-full bg-brand-700 px-4 py-2 text-white transition-colors hover:bg-brand-800" href="/donar">
         Donar
       </a>
@@ -109,18 +68,6 @@
             {link.label}
           </a>
         {/each}
-        <details class="rounded-md border px-3 py-2" open={legalesOpen}>
-          <summary class="cursor-pointer font-medium">Legales</summary>
-          <ul class="mt-2 space-y-1">
-            {#each legalesLinks as legal}
-              <li>
-                <a class="block rounded px-2 py-1 hover:bg-slate-100" href={legal.href} on:click={closeMobile}>
-                  {legal.label}
-                </a>
-              </li>
-            {/each}
-          </ul>
-        </details>
         <a class="block rounded-md bg-brand-700 px-3 py-2 text-center text-white" href="/donar" on:click={closeMobile}>
           Donar
         </a>

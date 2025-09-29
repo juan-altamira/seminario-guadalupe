@@ -8,7 +8,6 @@
   let name = '';
   let email = '';
   let message = '';
-  let consent = false;
   let honeypot = '';
   let sending = false;
   let status: 'idle' | 'ok' | 'error' = 'idle';
@@ -16,8 +15,7 @@
   const inputIds = {
     name: 'contacto-nombre',
     email: 'contacto-email',
-    message: 'contacto-mensaje',
-    consent: 'contacto-consentimiento'
+    message: 'contacto-mensaje'
   } as const;
 
   async function submit(e: SubmitEvent) {
@@ -28,7 +26,6 @@
     form.set('name', name);
     form.set('email', email);
     form.set('message', message);
-    form.set('consent', String(consent));
     const res = await fetch('/api/contacto', { method: 'POST', body: form });
     status = res.ok ? 'ok' : 'error';
     sending = false;
@@ -38,7 +35,6 @@
       name = '';
       email = '';
       message = '';
-      consent = false;
     }
   }
 </script>
@@ -81,16 +77,7 @@
       bind:value={message}
     ></textarea>
   </div>
-  <label class="flex items-start gap-3 text-sm text-slate-600">
-    <input
-      id={inputIds.consent}
-      type="checkbox"
-      required
-      bind:checked={consent}
-      class="mt-1 rounded border-slate-300 text-brand-600"
-    />
-    <span>Acepto el tratamiento de mis datos para recibir respuesta del Seminario.</span>
-  </label>
+
   <button
     class="inline-flex items-center gap-2 rounded-full bg-brand-700 px-5 py-2 text-sm font-semibold text-white transition hover:bg-brand-800"
     type="submit"
