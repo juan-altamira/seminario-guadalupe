@@ -39,7 +39,7 @@
           class={`rounded-full border px-4 py-2 text-sm font-semibold transition ${amount === sugerido ? 'border-brand-700 bg-brand-50 text-brand-700' : 'border-slate-300 hover:border-brand-400'}`}
           on:click={() => (amount = sugerido)}
         >
-          € {sugerido}
+          $ {sugerido}
         </button>
       {/each}
     </div>
@@ -85,7 +85,7 @@
         class="mt-4 inline-flex items-center gap-2 rounded-full bg-brand-700 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-800"
         on:click={submitOnline}
       >
-        Donar € {amount}
+        Donar $ {amount}
       </button>
     </div>
   {:else}
