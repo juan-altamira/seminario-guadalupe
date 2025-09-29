@@ -12,6 +12,11 @@ let clientInstance: ReturnType<typeof createClient> | null = null;
 
 function createSanityClient() {
   if (!projectId || !dataset) {
+    console.warn('Sanity client not configured', {
+      projectId,
+      dataset,
+      hasApiVersion: Boolean(apiVersion)
+    });
     return null;
   }
 
