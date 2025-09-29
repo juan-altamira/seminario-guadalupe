@@ -1,17 +1,11 @@
 import { createClient, type ClientConfig } from '@sanity/client';
-import {
-  SANITY_PROJECT_ID,
-  SANITY_DATASET,
-  SANITY_API_VERSION,
-  SANITY_TOKEN,
-  SANITY_USE_CDN
-} from '$env/static/private';
+import { env } from '$env/dynamic/private';
 
-const projectId = SANITY_PROJECT_ID;
-const dataset = SANITY_DATASET || 'production';
-const apiVersion = SANITY_API_VERSION || '2024-01-01';
+const projectId = env.SANITY_PROJECT_ID ?? env.SANITY_STUDIO_PROJECT_ID ?? '';
+const dataset = env.SANITY_DATASET ?? env.SANITY_STUDIO_DATASET ?? 'production';
+const apiVersion = env.SANITY_API_VERSION ?? '2024-01-01';
 
-const useCdnEnv = (SANITY_USE_CDN ?? '').toLowerCase();
+const useCdnEnv = (env.SANITY_USE_CDN ?? '').toLowerCase();
 const useCdn = useCdnEnv === 'true' || useCdnEnv === '1';
 
 let clientInstance: ReturnType<typeof createClient> | null = null;
@@ -29,8 +23,8 @@ function createSanityClient() {
     perspective: 'published'
   };
 
-  if (SANITY_TOKEN) {
-    config.token = SANITY_TOKEN;
+  if (env.SANITY_TOKEN) {
+    config.token = env.SANITY_TOKEN;
   }
 
   return createClient(config);
