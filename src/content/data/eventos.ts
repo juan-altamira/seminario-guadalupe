@@ -13,7 +13,7 @@ export const eventos: Evento[] = [
       direccion: 'Santa Fe, Argentina',
       mapa: 'https://maps.google.com/?q=Seminario+Nuestra+Se%C3%B1ora+de+Guadalupe+Santa+Fe'
     },
-    estado: 'proximo'
+    estado: 'pasado'
   },
   {
     slug: 'corpus-christi-2025',
@@ -27,7 +27,7 @@ export const eventos: Evento[] = [
       direccion: 'San Jerónimo 1168, Santa Fe',
       mapa: 'https://maps.google.com/?q=Catedral+Metropolitana+de+Santa+Fe'
     },
-    estado: 'proximo'
+    estado: 'pasado'
   },
   {
     slug: 'peregrinacion-guadalupe-2024',
